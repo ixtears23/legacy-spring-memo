@@ -4,7 +4,7 @@
 
 `dispatcherServlet.xml`
 ~~~
-  <context:component-scan base-package="com.spring.java"/>
+  	<context:component-scan base-package="com.spring.java"/>
 	
 	<bean id="requestMappingHandler" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
 		<property name="Interceptors">
