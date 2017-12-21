@@ -83,5 +83,5 @@ public class WebRequest implements WebRequestInterceptor {
 > InterCeptor의 종류는 다양하다  
 > 어떤 InterCeptor를 구현할지는 개발자의 몫인듯  
 > WebRequestInterceptor, HandlerInterceptor 등등..많음..  
-> 그리고InterCeptor를 구현할 클래스의 위치는 개발자 마음임.  
-> xml에Bean객체를등록할때class속성에InterCeptor를 구현한 클래스의 경로와 클래스명만 명시해 주면됨.  
+> 그리고 InterCeptor를 구현할 클래스의 위치는 개발자 마음임.  
+> xml에 Bean객체를 등록할 때 class속성에 InterCeptor를 구현한 클래스의 경로와 클래스명만 명시해 주면됨.  
