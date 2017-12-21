@@ -1,6 +1,7 @@
 
-# log4j  
-https://logging.apache.org/log4j/2.x/manual/async.html
+# log4j2  
+
+[apache log4j2](https://logging.apache.org/log4j/2.x/)
 
 
 ### 로깅 피크 처리량  
@@ -51,5 +52,3 @@ https://logging.apache.org/log4j/2.x/manual/async.html
 > log4j-api-2.10.0.jar  
 > log4j-core-2.10.0.jar  
 
-아래 url 참고
-https://logging.apache.org/log4j/2.x/
