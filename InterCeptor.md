@@ -1,8 +1,8 @@
 
 
 ## 순서
-#### 1. xml 설정
-#### 2. InterCeptor interface 구현
+ **1. xml 설정**
+ **2. InterCeptor interface 구현**
  
 
 #### 1. xml 설정
