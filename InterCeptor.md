@@ -2,10 +2,10 @@
 
 ## 순서
  1. xml 설정
- 2. interface 구현
+ 2. InterCeptor interface 구현
  
 
-##### 1. xml 설정
+#### 1. xml 설정
  > HandlerMapping 클래스 Bean  참조  
  > HandlerMapping클래스 Bean의 property에 **interceptors** 이름으로 interceptor를 구현한 클래스를 참조 한다.  
  > InterCeptor Bean 객체의 class 속성값은 InterCeptor를 구현한 클래스의 경로부터 이름까지 적어준다.  
@@ -35,7 +35,7 @@
 	<bean id="webRequestInterCeptor" class="spring.learning.config.java.interCeptors.WebRequest"/>
 ~~~
   
-##### 아래실제 InterCeptor를 구현한 클래스
+#### 2. InterCeptor interface 구현
 ~~~
 public class WebRequest implements WebRequestInterceptor {
 
@@ -63,16 +63,16 @@ public class WebRequest implements WebRequestInterceptor {
 `preHandle`
 > 핸들러의 실행을 차단하십시오.   
 > HandlerAdapter가 실제로 핸들러를 호출 한 후에 호출되었지만  
-> DispatcherServlet이 뷰를 렌더링하기 전에 호출됩니다.
+> DispatcherServlet이 뷰를 렌더링하기 전에 호출됩니다.  
 > 이 방법을 사용하면 각 인터셉터는 실행 체인을 중단하고  
 > 일반적으로 HTTP 오류를 보내거나 사용자 지정 응답을 작성하도록 결정할 수 있습니다.  
 
 `postHandle`
 > 핸들러의 실행을 차단하십시오.  
-> HandlerAdapter가 실제로 핸들러를 호출 한 후에 호출되었지만 
+> HandlerAdapter가 실제로 핸들러를 호출 한 후에 호출되었지만  
 > DispatcherServlet이 뷰를 렌더링하기 전에 호출됩니다.  
 > 지정된 ModelAndView를 통해 추가 모델 객체를 뷰에 노출 할 수 있습니다.  
-> 이 방법을 사용하면 각 인터셉터는 실행 체인을 역순으로 적용하여 실행을 사후 처리 할 수 있습니다.
+> 이 방법을 사용하면 각 인터셉터는 실행 체인을 역순으로 적용하여 실행을 사후 처리 할 수 있습니다.  
 
 `afterCompletion`
 > 요청 처리 완료 후, 즉 뷰 렌더링 후 콜백.  
