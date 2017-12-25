@@ -96,6 +96,8 @@ public class WebRequest implements WebRequestInterceptor {
 > 매핑 된 인터셉터는 경로 패턴과 일치하는 요청 URL에만 적용됩니다.  
 > 매핑 된 인터셉터 빈은 초기화 중 유형(type)별로도 감지됩니다.  
 
-
+- HandlerInterceptor  
+- WebRequestInterceptor  
+- MappedInterceptor  
 
 
