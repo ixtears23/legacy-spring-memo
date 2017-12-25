@@ -11,32 +11,32 @@
  > InterCeptor Bean 객체의 class 속성값은 InterCeptor를 구현한 클래스의 경로부터 이름까지 적어준다.  
  
 ##### InterCeptor를 여러개 등록 `<list>`를 사용해서 등록
- ~~~
-	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
-		<property name="interceptors">
-			<list>
-				<ref bean="handlerInterCeptor"/>
-			</list>		
-		</property>
-	</bean>
-  
-  
-	<bean id="webRequestInterCeptor" class="spring.learning.config.java.interCeptors.WebRequest"/>
-	<bean id="handlerInterCeptor" class="spring.learning.config.java.interCeptors.Handler"/>
+ ~~~xml
+<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+	<property name="interceptors">
+		<list>
+			<ref bean="handlerInterCeptor"/>
+		</list>		
+	</property>
+</bean>
+ 
+ 
+<bean id="webRequestInterCeptor" class="spring.learning.config.java.interCeptors.WebRequest"/>
+<bean id="handlerInterCeptor" class="spring.learning.config.java.interCeptors.Handler"/>
 ~~~
 
 
 ##### InterCeptor를 하나만 등록
-~~~
-	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
-		<property name="interceptors" ref="webRequestInterCeptor"/>
-	</bean>
-  
-	<bean id="webRequestInterCeptor" class="spring.learning.config.java.interCeptors.WebRequest"/>
+~~~xml
+<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+	<property name="interceptors" ref="webRequestInterCeptor"/>
+</bean>
+ 
+<bean id="webRequestInterCeptor" class="spring.learning.config.java.interCeptors.WebRequest"/>
 ~~~
   
 #### 2. InterCeptor interface 구현
-~~~
+~~~java
 public class WebRequest implements WebRequestInterceptor {
 
 	@Override
