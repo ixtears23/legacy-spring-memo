@@ -1,4 +1,4 @@
-### Default is **BeanNameUrlHandlerMapping** and **RequestMappingHandlerMapping**.
+기본값은 **BeanNameUrlHandlerMapping**, **RequestMappingHandlerMapping**.
 ---
 
 
