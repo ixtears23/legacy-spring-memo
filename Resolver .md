@@ -2,11 +2,12 @@
 Resolver
 ---
 
-* ViewResolver 
-* * RequestToViewNameTranslator
-* MultipartResolver 
-* LocaleResolver  
-* ThemeResolver
+- ViewResolver 
+  - RequestToViewNameTranslator
+- MultipartResolver 
+- LocaleResolver  
+- ThemeResolver
+- HandlerExceptionResolver
 
 
 # ViewResolver 
@@ -39,3 +40,14 @@ Resolver
 > 고정 테마 및 쿠키 및 세션 저장을위한 구현이 포함됩니다.  
 * **빈의 이름**은 `themeResolver`이다.  
 * **기본값**은 `FixedThemeResolver`입니다.  
+
+
+
+# HandlerExceptionResolver
+> Dispatcher의 예외 해결 전략은 HandlerExceptionResolver를 통해 지정할 수 있습니다.  
+> 예를 들어 특정 예외를 오류 페이지에 매핑 할 수 있습니다.  
+* **기본값**
+1. ExceptionHandlerExceptionResolver  
+2. ResponseStatusExceptionResolver  
+3. DefaultHandlerExceptionResolver  
+* **bean name**은 어떤것으로도 가능.
