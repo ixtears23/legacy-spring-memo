@@ -1,2 +1,2 @@
-# spring!!!!!!!!!!!!!!!!
-## Let's study hard!!
+
+## Let's study hard in Spring Framework.
