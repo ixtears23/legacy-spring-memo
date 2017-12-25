@@ -5,22 +5,21 @@
 > 경로 `org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping`
 
 `dispatcherServlet.xml`
-~~~
-  	<context:component-scan base-package="com.spring.java"/>
+~~~xml
+<context:component-scan base-package="com.spring.java"/>
 	
-	<bean id="requestMappingHandler" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
-		<property name="Interceptors">
-			<list>
-				<ref bean="handlerInterceptor"/>
-				<ref bean="webReqInterceptor"/>
-				<ref bean="handleAdaptor"/>
-			</list>
-		</property>
-	</bean>
-
-	<bean id="handlerInterceptor" class="com.spring.config.interceptor.HandlerInterCeptorImpl"/>
-	<bean id="webReqInterceptor" class="com.spring.config.interceptor.WebRequestInterceptorImpl"/>
-	<bean id="handleAdaptor" class="com.spring.config.interceptor.HandleAdaptor"></bean>
+<bean id="requestMappingHandler" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+	<property name="Interceptors">
+		<list>
+			<ref bean="handlerInterceptor"/>
+			<ref bean="webReqInterceptor"/>
+			<ref bean="handleAdaptor"/>
+		</list>
+	</property>
+</bean>
+<bean id="handlerInterceptor" class="com.spring.config.interceptor.HandlerInterCeptorImpl"/>
+<bean id="webReqInterceptor" class="com.spring.config.interceptor.WebRequestInterceptorImpl"/>
+<bean id="handleAdaptor" class="com.spring.config.interceptor.HandleAdaptor"></bean>
 ~~~
 
 
