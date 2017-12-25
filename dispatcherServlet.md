@@ -21,9 +21,9 @@
 > 아직 새로 고치지 않은 경우 (권장 방법) 다음이 발생합니다.  
 * 지정된 컨텍스트에 부모가없는 경우, 루트 어플리케이션 컨텍스트가 부모로서 설정됩니다.  
 * 지정된 컨텍스트에 ID가 할당되어 있지 않은 경우, 그 ID에 할당 할 수 있습니다.  
-* ServletContext 및 ServletConfig 객체가 응용 프로그램 컨텍스트에 위임됩니다.  
+* `ServletContext` 및 `ServletConfig` 객체가 응용 프로그램 컨텍스트에 위임됩니다.  
 * [FrameworkServlet.postProcessWebApplicationContext (org.springframework.web.context.ConfigurableWebApplicationContext)](https://docs.spring.io/spring/docs/5.0.3.BUILD-SNAPSHOT/javadoc-api/org/springframework/web/servlet/FrameworkServlet.html#postProcessWebApplicationContext-org.springframework.web.context.ConfigurableWebApplicationContext-)가 호출됩니다.  
-* "contextInitializerClasses"init-param 또는 [FrameworkServlet.setContextInitializers (org.springframework.context.ApplicationContextInitializer <?> ...)](https://docs.spring.io/spring/docs/5.0.3.BUILD-SNAPSHOT/javadoc-api/org/springframework/web/servlet/FrameworkServlet.html#setContextInitializers-org.springframework.context.ApplicationContextInitializer...-) 속성을 통해 지정된 모든 ApplicationContextInitializers가 적용됩니다.  
+* `contextInitializerClasses`init-param 또는 [FrameworkServlet.setContextInitializers (org.springframework.context.ApplicationContextInitializer <?> ...)](https://docs.spring.io/spring/docs/5.0.3.BUILD-SNAPSHOT/javadoc-api/org/springframework/web/servlet/FrameworkServlet.html#setContextInitializers-org.springframework.context.ApplicationContextInitializer...-) 속성을 통해 지정된 모든 `ApplicationContextInitializers`가 적용됩니다.  
 * 컨텍스트가 [ConfigurableApplicationContext](https://docs.spring.io/spring/docs/5.0.3.BUILD-SNAPSHOT/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html)를 구현하는 경우 [refresh()](https://docs.spring.io/spring/docs/5.0.3.BUILD-SNAPSHOT/javadoc-api/org/springframework/context/ConfigurableApplicationContext.html#refresh--)가 호출됩니다.
 * If the context has already been refreshed, none of the above will occur, under the assumption that the user has performed these actions (or not) per their specific needs.
 
