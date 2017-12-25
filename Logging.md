@@ -30,7 +30,7 @@
 > log4j apache에 가보면 많이 있음...
 
 `WEB-INF/classes/log4j2.xml`
-~~~
+~~~xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
   <Appenders>
