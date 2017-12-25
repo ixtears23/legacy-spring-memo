@@ -1,6 +1,5 @@
-기본값은 **BeanNameUrlHandlerMapping**, **RequestMappingHandlerMapping**.
----
 
+*Default is **BeanNameUrlHandlerMapping** and **RequestMappingHandlerMapping**.
 
 # RequestMappingHandlerMapping
 > 경로 `org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping`
