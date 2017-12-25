@@ -3,6 +3,7 @@ Resolver
 ---
 
 * ViewResolver 
+* * RequestToViewNameTranslator
 * MultipartResolver 
 * LocaleResolver  
 * ThemeResolver
@@ -19,7 +20,7 @@ Resolver
 * **기본값**은 `DefaultRequestToViewNameTranslator`  
 
 
-# 기본 MultipartResolver
+# MultipartResolver
 > 멀티 파트 요청을 해결하기위한 디스패처의 전략은 `MultipartResolver` 구현에 의해 결정됩니다.  
 > `Apache Commons FileUpload` 및 `Servlet 3`에 대한 구현이 포함되어 있습니다.  
 * **일반적인 선택**은 `CommonsMultipartResolver` 이다.
