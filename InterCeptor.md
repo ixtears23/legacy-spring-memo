@@ -85,3 +85,17 @@ public class WebRequest implements WebRequestInterceptor {
 > WebRequestInterceptor, HandlerInterceptor 등등..많음..  
 > 그리고 InterCeptor를 구현할 클래스의 위치는 개발자 마음임.  
 > xml에 Bean객체를 등록할 때 class속성에 InterCeptor를 구현한 클래스의 경로와 클래스명만 명시해 주면됨.  
+
+
+---
+### 이하 JAVA API
+### `AbstractHandlerMapping` 클래스
+* `setInterceptors`
+> 지원되는 인터셉터 유형은  
+> `HandlerInterceptor`, `WebRequestInterceptor` 및 `MappedInterceptor`입니다.  
+> 매핑 된 인터셉터는 경로 패턴과 일치하는 요청 URL에만 적용됩니다.  
+> 매핑 된 인터셉터 빈은 초기화 중 유형(type)별로도 감지됩니다.  
+
+
+
+
