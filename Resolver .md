@@ -32,7 +32,7 @@ Resolver
 # LocaleResolver
 > 로케일 해결 전략은 LocaleResolver에 의해 결정됩니다.  
 > out-of-the-box 구현은 HTTP accept header, 쿠키 또는 세션을 통해 작동합니다.  
-> out-of-the-box가 무슨말인 잘 모르겠지만.. [Versioning using Accept HTTP Header(Accept HTTP Header를 사용한 버전관리)](https://github.com/Microsoft/aspnet-api-versioning/issues/42)
+> out-of-the-box가 무슨말인 잘 모르겠지만.. [Accept HTTP Header를 사용한 버전관리](https://github.com/Microsoft/aspnet-api-versioning/issues/42)
 * **빈의 이름**은 `localeResolver`입니다.  
 * **기본값**은 `AcceptHeaderLocaleResolver`입니다.  
 
