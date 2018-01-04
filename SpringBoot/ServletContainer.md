@@ -1,7 +1,7 @@
 9.1 Servlet containers
 The following embedded servlet containers are supported out of the box:
 
-| Name | Servlet | Version | Java | Version |
+| Name | Servlet | Version | Java 
 | :----------- | :------: | --------------------: | ----------------------: |
 | Tomcat 8 | 3.1      | 9.0.x                 | 8 and later             |
 | 3.1          | 2.3      | 8.5.x                 | 7 and later             |
