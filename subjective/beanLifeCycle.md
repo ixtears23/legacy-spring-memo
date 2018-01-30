@@ -33,3 +33,8 @@
  
  > ##### 결론적으로 `<context : component-scan>`을 사용하면 `<context : annotation-config>` 기능이 암시 적으로 활성화됩니다.  
  > ##### `<context : component-scan>`을 사용할 때는 일반적으로 `<context : annotation-config>` 요소를 포함 할 필요가 없습니다.
+
+
+### @PostConstruct and @PreDestroy
+> @PostConstruct : bean 초기화시 수행  
+> @PreDestroy : bean 소멸시 수행  
