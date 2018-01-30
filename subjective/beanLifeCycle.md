@@ -31,5 +31,5 @@
  > xml에 `<context:annotation-config/>` 태그를 사용해야 한다.  
  > * `<context:annotation-config/>` 태그는 bean을 등록하는 태그가 아니다!
  
- ##### 결론적으로 `<context : component-scan>`을 사용하면 `<context : annotation-config>` 기능이 암시 적으로 활성화됩니다.
- ##### `<context : component-scan>`을 사용할 때는 일반적으로 `<context : annotation-config>` 요소를 포함 할 필요가 없습니다.
+ > ##### 결론적으로 `<context : component-scan>`을 사용하면 `<context : annotation-config>` 기능이 암시 적으로 활성화됩니다.  
+ `<context : component-scan>`을 사용할 때는 일반적으로 `<context : annotation-config>` 요소를 포함 할 필요가 없습니다.
