@@ -6,10 +6,11 @@
  
 
 #### 1. xml 설정
- > HandlerMapping 클래스 Bean  참조  
- > HandlerMapping클래스 Bean의 property에 **interceptors** 이름으로 interceptor를 구현한 클래스를 참조 한다.  
- > InterCeptor Bean 객체의 class 속성값은 InterCeptor를 구현한 클래스의 경로부터 이름까지 적어준다.  
- 
+HandlerMapping 클래스 Bean  참조  
+HandlerMapping클래스 Bean의 property에 **interceptors** 이름으로 interceptor를 구현한 클래스를 참조 한다.  
+InterCeptor Bean 객체의 class 속성값은 InterCeptor를 구현한 클래스의 경로부터 이름까지 적어준다.  
+{: .notice}
+
 ##### InterCeptor를 여러개 등록 `<list>`를 사용해서 등록
  ~~~xml
 <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
