@@ -30,6 +30,6 @@ jobs:
         git pull --rebase origin master
         git config --local user.email "ixtears23@icloud.com"
         git config --local user.name "Junseok Oh"
-        git add update_readme.py
+        git add README.md
         git commit -m "Update README.md" || echo "No changes to commit"
         git push
