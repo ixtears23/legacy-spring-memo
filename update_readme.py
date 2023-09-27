@@ -4,19 +4,19 @@ from datetime import datetime
 
 def get_git_creation_date(file_path):
     try:
-        # git log 명령을 사용하여 파일의 최초 커밋 날짜를 가져옵니다.
         date_str = subprocess.check_output(
-            ['git', 'log', '--diff-filter=A', '--', file_path],
+            ['git', 'log', '--diff-filter=A', '--format=%ai', '--', file_path],
             universal_newlines=True,
-        ).split('\n')[2].split('   ')[1]
-
+        ).strip()
+        
         # 날짜 문자열을 datetime 객체로 변환합니다.
-        date = datetime.strptime(date_str, '%c %z')
+        date = datetime.strptime(date_str, '%Y-%m-%d %H:%M:%S %z')
         return date.strftime('%Y-%m-%d')
     except Exception as e:
         # git log 명령이 실패하면 None을 반환합니다.
         print(f"Error getting creation date for {file_path}: {e}")
         return None
+
 
 # README 파일을 생성할 디렉토리를 지정합니다.
 project_dir = '.'
