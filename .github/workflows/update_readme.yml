@@ -25,7 +25,7 @@ jobs:
       run: python update_readme.py
     - name: Commit and push if changed
       run: |
-        git pull --rebase origin master
+        git diff
         git config --local user.email "ixtears23@icloud.com"
         git config --local user.name "Junseok Oh"
         git add README.md
